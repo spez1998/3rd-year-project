@@ -2,7 +2,7 @@
 What started off as a simple backup and sync repository has now become a showcase for my work, aimed at the casual observer who may not have a background in electrical and electronic engineering.
 
 ## Introduction
-For a more technical introduction, along with recommendations for further reading, please read my [project initialisation document.](Deliverables/PID/PID_ela17sm.pdf)
+For a more technical introduction, along with recommendations for further reading, please read my [project initialisation document.](https://spez1998.github.io/3rd-year-project/Deliverables/PID/PID_ela17sm.pdf)
 
 The ultimate aim of all equipment used to reproduce audio is that whatever has been recorded should be played exactly as it was recorded. This is a difficult task to achieve, since nothing that currently exists responds completely evenly across all of the frequencies that it's expected to operate in. This phenomenon of even response across a frequency range is known as linearity. Careful design allows us to come close to linearity - one of the mathematical techniques used is to model the equipment as abstract systems with 'transfer functions' that describe the way the system performs across a frequency range. The art of an engineer building this equipment is to 'control' the system effectively. Controlling the system is the process of feeding a portion of the output back to the input, in order to compensate for errors that have occured, are currently occuring, and will occur.
 
