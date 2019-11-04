@@ -1,2 +1,5 @@
 .DS_Store
 ~$*.docx
+Simulations/Linkwitz\ THOR/*.log
+Simulations/Linkwitz\ THOR/*.raw
+Simulations/Linkwitz\ THOR/*.imp
