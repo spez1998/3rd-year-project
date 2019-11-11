@@ -16,11 +16,19 @@ Thus, the goal of this project is to investigate different methods of controllin
 ## Open-Loop Subwoofer Analysis
 All loudspeakers have certain inherent mechanical and electrical properties which won't change. These properties and given to us by the manufacturer in a datasheet. Using them, the setup of a loudspeaker in some theoretical box can be modelled entirely as an equivalent electrical circuit. A good place to start this project would therefore be to simulate my choice of subwoofer in LTspice. I chose the Pyle PLPW6D dual voice-coil (DVC) subwoofer. Have a look at its frequency response between 10 and 100Hz:
 
+<!--- Basic response graph --->
+
 That looks pretty awful. The response is rolling off towards lower frequencies, with a 7dB difference in sensitivity between low and high frequencies. A nasty resonant peak has also formed at 82Hz. Let's use a notch filter to get rid of the peak:
+
+<!--- Basic response with notch filter graph --->
 
 Better, but the notch filter's response is now slightly muddying the subwoofer's response towards 100Hz. Some tweaking of component values will help to reduce this. Now let's use another filter to boost the lower frequency response:
 
+<!--- Both Linkwitz Transform filters plus notch filter graph --->
+
 The result is pretty good. We have a noticeably smoother and more powerful response in the low frequencies, slightly rolling off as we approach 100Hz. The effect of the notch filter is slightly more noticeable now. Here's a graph to compare all three responses:
+
+<!--- Comparison graphs --->
 
 What I've done is used some filters to improve the open-loop response of the subwoofer by changing the input signal to accommodate its electrical and mechanical properties. **I have not yet introduced any form of control** because I'm not measuring what the subwoofer is currently doing, I'm simply using information that describes what it will always do to any signal, and making some circuitry that fights against that.
 
