@@ -18,15 +18,15 @@ All loudspeakers have certain inherent mechanical and electrical properties whic
 
 <!--- Basic response graph --->
 
-That looks pretty awful. The response is rolling off towards lower frequencies, with a 7dB difference in sensitivity between low and high frequencies. A nasty resonant peak has also formed at 82Hz. Let's use a notch filter to get rid of the peak:
+That looks pretty awful. The response is rolling off towards lower frequencies, with a 7dB difference in sensitivity between low and high frequencies. A nasty resonant peak has also formed at 82Hz. Let's try boosting the low-frequency response:
 
-<!--- Basic response with notch filter graph --->
+<!--- Both Linkwitz Transforms without notch graph --->
 
-Better, but the notch filter's response is now slightly muddying the subwoofer's response towards 100Hz. Some tweaking of component values will help to reduce this. Now let's use another filter to boost the lower frequency response:
+We now have more of a response in the lowest frequencies, with a peak at 20Hz and rolling off slightly towards higher frequencies. The resonant peak still exists, though. Let's use a notch filter to remove it:
 
 <!--- Both Linkwitz Transform filters plus notch filter graph --->
 
-The result is pretty good. We have a noticeably smoother and more powerful response in the low frequencies, slightly rolling off as we approach 100Hz. The effect of the notch filter is slightly more noticeable now. Here's a graph to compare all three responses:
+The result is pretty good. We have a noticeably smoother and more powerful response in the low frequencies, slightly rolling off as we approach 100Hz. The effect of the notch filter is slightly noticeable, but unavloidable. Here's a graph to compare all three responses:
 
 <!--- Comparison graphs --->
 
