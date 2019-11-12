@@ -1,10 +1,9 @@
 .DS_Store
 ~$*.docx
-Simulations/Linkwitz\ THOR/*.log
-Simulations/Linkwitz\ THOR/*.raw
-Simulations/Linkwitz\ THOR/*.imp
+OpenLoopDesign/Simulations/LinkwitzTHOR/*.log
+OpenLoopDesign/Simulations/LinkwitzTHOR/*.raw
+OpenLoopDesign/Simulations/LinkwitzTHOR/*.imp
 BOM/PLPW6D.sb-dde5747c-7zYC4d
-Simulations/Pyle\ PLPW6D/*.log
-Simulations/Pyle\ PLPW6D/*.raw
-Simulations/Pyle\ PLPW6D/*.imp
-
+OpenLoopDesign/Simulations/PylePLPW6D/*.log
+OpenLoopDesign/Simulations/PylePLPW6D/*.raw
+OpenLoopDesign/Simulations/PylePLPW6D/*.imp
