@@ -36,7 +36,7 @@ The result is pretty good. We have a noticeably smoother and more powerful respo
 
 
 <p align="center">
-	<img width="560" height="420" src="https://spez1998.github.io/3rd-year-project/OpenLoopDesign/Plots/Graphs/response_comparison.jpg>
+	<img width="560" height="420" src="https://spez1998.github.io/3rd-year-project/OpenLoopDesign/Plots/Graphs/response_comparison.jpg">
 </p>
 
 What I've done is used some filters to improve the open-loop response of the subwoofer by changing the input signal to accommodate its electrical and mechanical properties. **I have not yet introduced any form of control** because I'm not measuring what the subwoofer is currently doing, I'm simply using information that describes what it will always do to any signal, and making some circuitry that fights against that.
