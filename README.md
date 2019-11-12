@@ -16,7 +16,7 @@ Thus, the goal of this project is to investigate different methods of controllin
 ## Open-Loop Subwoofer Analysis
 All loudspeakers have certain inherent mechanical and electrical properties which won't change. These properties and given to us by the manufacturer in a datasheet. Using them, the setup of a loudspeaker in some theoretical box can be modelled entirely as an equivalent electrical circuit. A good place to start this project would therefore be to simulate my choice of subwoofer in LTspice. I chose the Pyle PLPW6D dual voice-coil (DVC) subwoofer. Have a look at its frequency response between 10 and 100Hz:
 
-<img align="center" width="560" height="420" src=https://spez1998.github.io/3rd-year-project/OpenLoopDesign/Plots/Graphs/basic_response_graph.jpg">
+<img align="center" width="560" height="420" src=https://spez1998.github.io/3rd-year-project/OpenLoopDesign/Plots/Graphs/basic_response_graph.jpg"/>
 
 That looks pretty awful. The response is rolling off towards lower frequencies, with a 7dB difference in sensitivity between low and high frequencies. A nasty resonant peak has also formed at 82Hz. Let's try boosting the low-frequency response:
 
