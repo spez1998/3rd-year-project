@@ -22,15 +22,22 @@ All loudspeakers have certain inherent mechanical and electrical properties whic
 
 That looks pretty awful. The response is rolling off towards lower frequencies, with a 7dB difference in sensitivity between low and high frequencies. A nasty resonant peak has also formed at 82Hz. Let's try boosting the low-frequency response:
 
-![Bass-boosted PLPW6D response](https://spez1998.github.io/3rd-year-project/OpenLoopDesign/Plots/Graphs/bass_boosted_response_graph.jpg)
+<p align="center">
+	<img width="560" height="420" src="https://spez1998.github.io/3rd-year-project/OpenLoopDesign/Plots/Graphs/bass_boosted_response_graph.jpg">
+</p>
 
 We now have more of a response in the lowest frequencies, with a peak at 20Hz and rolling off slightly towards higher frequencies. The resonant peak still exists, though. Let's use a notch filter to remove it:
 
-![Fully corrected PLPW6D response](https://spez1998.github.io/3rd-year-project/OpenLoopDesign/Plots/Graphs/full_open_loop_graph.jpg)
+<p align="center">
+	<img width="560" height="420" src="https://spez1998.github.io/3rd-year-project/OpenLoopDesign/Plots/Graphs/full_open_loop_graph.jpg">
+</p>
 
 The result is pretty good. We have a noticeably smoother and more powerful response in the low frequencies, slightly rolling off as we approach 100Hz. The effect of the notch filter is slightly noticeable, but unavloidable. Here's a graph to compare all three responses:
 
-![Fully corrected PLPW6D response](https://spez1998.github.io/3rd-year-project/OpenLoopDesign/Plots/Graphs/response_comparison.jpg)
+
+<p align="center">
+	<img width="560" height="420" src="https://spez1998.github.io/3rd-year-project/OpenLoopDesign/Plots/Graphs/response_comparison.jpg>
+</p>
 
 What I've done is used some filters to improve the open-loop response of the subwoofer by changing the input signal to accommodate its electrical and mechanical properties. **I have not yet introduced any form of control** because I'm not measuring what the subwoofer is currently doing, I'm simply using information that describes what it will always do to any signal, and making some circuitry that fights against that.
 
