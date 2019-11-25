@@ -7,3 +7,4 @@ BOM/PLPW6D.sb-dde5747c-7zYC4d
 OpenLoopDesign/Simulations/PylePLPW6D/*.log
 OpenLoopDesign/Simulations/PylePLPW6D/*.raw
 OpenLoopDesign/Simulations/PylePLPW6D/*.imp
+OpenLoopDesign/Plots/RawData/10-100/slprj/*
