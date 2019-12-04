@@ -1,3 +1,4 @@
 Harry F Olson, "Music, physics, and engineering", "Elements of Acoustical Engineering"
 Benjamin Kuo, "Art of Control", "Automatic Control Systems"
 https://en.wikibooks.org/wiki/Engineering_Acoustics/Transducers_-_Loudspeaker
+https://www.ht-audio.com/pages/SpeakerBasics.html
