@@ -9,7 +9,7 @@ Z_nom = 4
 
 
 %%% ABOVE RESONANCE POWER REQUIREMENTS %%%
-f_above = 95.5
+f_above = 100
 a_above = (2*pi*f_above)^2 * Xmax
 F_above = Mms * a_above
 Ip_above = F_above / Bl_spec
@@ -23,6 +23,7 @@ VAS_box = (Cms_box / Cms_spec)*VAS_spec
 V_box = (VAS_box*VAS_spec)/(VAS_spec-VAS_box)
 
 %%% BELOW RESONANCE POWER REQUIREMENTS %%%
+V_box = 15
 VAS_box = (VAS_spec * V_box)/(VAS_spec + V_box)
 Cms_box = (VAS_box/VAS_spec) * Cms_spec
 fb = fs*sqrt(VAS_spec / VAS_box)
@@ -38,6 +39,6 @@ speaker_face_diameter = 0.165
 mounting_face_length_int = 0.200
 mounting_face_width_int = 0.200
 
-box_depth_int = int_vol / (mounting_face_length*mounting_face_width)
+box_depth_int = int_vol / (mounting_face_length_int * mounting_face_width_int)
 box_depth_ext = (2*mdf_thickness) + box_depth_int
 
