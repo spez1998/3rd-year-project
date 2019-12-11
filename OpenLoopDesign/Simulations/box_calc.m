@@ -23,7 +23,6 @@ VAS_box = (Cms_box / Cms_spec)*VAS_spec
 V_box = (VAS_box*VAS_spec)/(VAS_spec-VAS_box)
 
 %%% BELOW RESONANCE POWER REQUIREMENTS %%%
-V_box = 15
 VAS_box = (VAS_spec * V_box)/(VAS_spec + V_box)
 Cms_box = (VAS_box/VAS_spec) * Cms_spec
 fb = fs*sqrt(VAS_spec / VAS_box)
