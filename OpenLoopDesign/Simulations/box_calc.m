@@ -7,7 +7,6 @@ Xmax = 0.004
 Mms = 0.0148
 Z_nom = 4
 
-
 %%% ABOVE RESONANCE POWER REQUIREMENTS %%%
 f_above = 100
 a_above = (2*pi*f_above)^2 * Xmax
@@ -35,9 +34,18 @@ poweramp_below = (Ip/sqrt(2))^2 * Z_nom
 int_vol = V_box / 1000
 mdf_thickness = 0.012
 speaker_face_diameter = 0.165
-mounting_face_length_int = 0.200
-mounting_face_width_int = 0.200
-
-box_depth_int = int_vol / (mounting_face_length_int * mounting_face_width_int)
+mounting_face_length_ext = 0.200
+mounting_face_width_ext = 0.200
+box_depth_int = int_vol / ((mounting_face_length_ext-(2*mdf_thickness)) * (mounting_face_length_ext-(2*mdf_thickness)))
 box_depth_ext = (2*mdf_thickness) + box_depth_int
 
+int_vol = V_box / 1000
+mdf_thickness = 0.012
+speaker_face_diameter = 0.165
+mounting_face_length_ext = 0.200
+mounting_face_width_ext = 0.200
+mounting_face_length_int = mounting_face_length_ext-(2*mdf_thickness)
+mounting_face_width_int = mounting_face_width_ext-(2*mdf_thickness)
+int_depth = int_vol / (mounting_face_length_int*mounting_face_width_int)
+top_bottom_length = int_depth
+top_bottom_width = mounting_face_width_ext
