@@ -14,7 +14,7 @@ Loudspeakers, especially subwoofers, aren't very linear - and even worse, they a
 Thus, the goal of this project is to investigate different methods of controlling loudspeakers that have been conducted experimentally, combine as many of them as possible, and build an inexpensive subwoofer system that responds as well as an expensive model.
 
 ## Open-Loop Subwoofer Analysis
-All loudspeakers have certain inherent mechanical and electrical properties which won't change. These properties and given to us by the manufacturer in a datasheet. Using them, the setup of a loudspeaker in some theoretical box can be modelled entirely as an equivalent electrical circuit. A good place to start this project would therefore be to simulate my choice of subwoofer in LTspice. I chose the Pyle PLPW6D dual voice-coil (DVC) subwoofer. Have a look at its frequency response between 10 and 100Hz:
+All loudspeakers have certain inherent mechanical and electrical properties which won't change. These properties and given to us by the manufacturer in a datasheet. Using them, the setup of a loudspeaker in some theoretical box can be modelled entirely as an equivalent electrical circuit. A good place to start this project would therefore be to simulate my choice of subwoofer in LTspice. I chose the Pyle PLPW6D dual voice-coil (DVC) subwoofer. Have a look at its frequency response:
 
 <p align="center">
 	<img width="560" height="420" src="https://spez1998.github.io/3rd-year-project/OpenLoopDesign/Plots/Graphs/basic_response_graph.jpg">
@@ -32,7 +32,7 @@ We now have more of a response in the lowest frequencies, with a peak at 20Hz an
 	<img width="560" height="420" src="https://spez1998.github.io/3rd-year-project/OpenLoopDesign/Plots/Graphs/full_open_loop_graph.jpg">
 </p>
 
-The result is pretty good. We have a noticeably smoother and more powerful response in the low frequencies, slightly rolling off as we approach 100Hz. The effect of the notch filter is slightly noticeable, but unavloidable. Here's a graph to compare all three responses:
+The result is pretty good. We have a noticeably smoother and more powerful response in the low frequencies, slightly rolling off as we approach 100Hz. The effect of the notch filter is slightly noticeable, but unavoidable. Here's a graph to compare all three responses:
 
 
 <p align="center">
