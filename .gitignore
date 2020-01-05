@@ -8,4 +8,10 @@ OpenLoopDesign/Simulations/PylePLPW6D/*/*.log
 OpenLoopDesign/Simulations/PylePLPW6D/*/*.raw
 OpenLoopDesign/Simulations/PylePLPW6D/*/*.imp
 OpenLoopDesign/Simulations/PylePLPW6D/*/*.plt
+OpenLoopDesign/Simulations/LTSpice/*/*/*/*.log
+OpenLoopDesign/Simulations/LTSpice/*/*/*/*.raw
+OpenLoopDesign/Simulations/LTSpice/*/*/*/*.plt
+OpenLoopDesign/Simulations/LTSpice/*/*.log
+OpenLoopDesign/Simulations/LTSpice/*/*.raw
+OpenLoopDesign/Simulations/LTSpice/*/*.plt
 OpenLoopDesign/Plots/RawData/10-100/slprj/*

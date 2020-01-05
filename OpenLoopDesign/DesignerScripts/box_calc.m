@@ -28,7 +28,8 @@ fb = fs*sqrt(VAS_spec / VAS_box)
 F_req = Xmax / Cms_box
 Ip = F_req / Bl_spec
 P_diss = (3.4 * (Ip)^2)/2
-poweramp_below = (Ip/sqrt(2))^2 * Z_nom
+four_ohm_poweramp_below = (((Ip)^2)/2) * 4
+eight_ohm_poweramp_below = (((Ip)^2)/2) * 8
 
 %%% DIMENSIONS %%%
 int_vol = V_box / 1000
