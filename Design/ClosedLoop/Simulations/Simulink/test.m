@@ -1,1 +1,0 @@
-open_system('pyle_lt_pi.slx')
