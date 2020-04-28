@@ -1,3 +1,5 @@
+
+
 % MAGNITUDE COMPARISON PLOT %
 figure
 ax = gca;
