@@ -16,3 +16,6 @@ OpenLoopDesign/Simulations/LTSpice/*/*.raw
 OpenLoopDesign/Simulations/LTSpice/*/*.plt
 OpenLoopDesign/Plots/RawData/10-100/slprj/*
 Deliverables/EngagementVideo/Editing/*
+slrpj/*
+Design/Plots/open_loop_sim_data.mat
+Design/Plots/closed_loop_sim_data.mat

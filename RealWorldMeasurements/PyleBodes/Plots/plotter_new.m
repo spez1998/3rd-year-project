@@ -26,7 +26,7 @@ title('PLPW6D Coil Magnitude Comparison');
 xlabel('Frequency / Hz');
 ylabel('Impedance / \Omega');
 legend('Coil A','Coil B');
-exportgraphics(s3_mag,'s3_mag_comps.png',cwd,'Resolution',400');
+exportgraphics(s3_mag,'s3_mag_comps.png','Resolution',400');
 
 s3_phase = figure;
 semilogx(s3_ca(:,1),s3_ca(:,3),'r');
