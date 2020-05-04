@@ -46,5 +46,5 @@ grid on;
 axis square;
 title('PLPW6D Coil Linkage');
 xlabel('Frequency / Hz');
-ylabel('Phase / degrees');
+ylabel('Impedance / \Omega');
 exportgraphics(s3_parallel,'s3_coil_link.png','Resolution',400');
