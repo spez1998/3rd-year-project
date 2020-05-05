@@ -37,12 +37,12 @@ for i = sweep_start:sweep_step:sweep_end
     v_pid_delay = [v_pid_delay;i mean(dutycycle(out.v_pid_delay.signals.values(:,1),out.v_pid_delay.time,'Polarity','Positive'))*mean(pulseperiod(out.v_pid_delay.signals.values(:,1),out.v_pid_delay.time,'Polarity','Positive'))];
     i_pid_delay = [i_pid_delay;i mean(dutycycle(out.i_pid_delay.signals.values(:,1),out.i_pid_delay.time,'Polarity','Positive'))*mean(pulseperiod(out.i_pid_delay.signals.values(:,1),out.i_pid_delay.time,'Polarity','Positive'))];
     d_pid_delay = [d_pid_delay;i mean(dutycycle(out.d_pid_delay.signals.values(:,1),out.d_pid_delay.time,'Polarity','Positive'))*mean(pulseperiod(out.d_pid_delay.signals.values(:,1),out.d_pid_delay.time,'Polarity','Positive'))];
-    open_ph = [open_ph;i ((360 * out.open_ph.signals.values(end)))];
-    box_ph = [box_ph;i ((360 * out.box_ph.signals.values(end)))];
-    lt_ph = [lt_ph;i ((360 * out.lt_ph.signals.values(end)))];
-    v_pid_ph = [v_pid_ph;i ((360 * out.v_pid_ph.signals.values(end)))];
-    i_pid_ph = [i_pid_ph;i ((360 * out.i_pid_ph.signals.values(end)))];
-    d_pid_ph = [d_pid_ph;i ((360 * out.d_pid_ph.signals.values(end)))];
+%     open_ph = [open_ph;i ((360 * out.open_ph.signals.values(end)))];
+%     box_ph = [box_ph;i ((360 * out.box_ph.signals.values(end)))];
+%     lt_ph = [lt_ph;i ((360 * out.lt_ph.signals.values(end)))];
+%     v_pid_ph = [v_pid_ph;i ((360 * out.v_pid_ph.signals.values(end)))];
+%     i_pid_ph = [i_pid_ph;i ((360 * out.i_pid_ph.signals.values(end)))];
+%     d_pid_ph = [d_pid_ph;i ((360 * out.d_pid_ph.signals.values(end)))];
 end
 %% Plots
 % Magnitude
@@ -62,6 +62,7 @@ title('System Magnitude Response Comparisons');
 xlabel('Frequency/Hz');
 ylabel('Magnitude / dB');
 legend({'Freestanding','Mounted','Linkwitz-Transformed','Voltage-controlled','Current-controlled','Displacement-controlled'},'Location','southeast');
+exportgraphics(mag_plot,'mag_plot.png','Resolution',600');
 % Group Delay
 group_del_plot = figure;
 plot(open_delay(:,1),open_delay(:,2));
@@ -78,6 +79,7 @@ title('System Group Delay Comparisons');
 xlabel('Frequency / Hz');
 ylabel('Delay / s');
 legend({'Freestanding','Mounted','Linkwitz-Transformed','Voltage-controlled','Current-controlled','Displacement-controlled'},'Location','northeast');
+exportgraphics(group_del_plot,'group_del_plot.png','Resolution',600');
 % Phase
 phase_plot = figure;
 plot(open_ph(:,1),open_ph(:,2));
@@ -87,7 +89,11 @@ plot(lt_ph(:,1),lt_ph(:,2));
 plot(v_pid_ph(:,1),v_pid_ph(:,2));
 plot(i_pid_ph(:,1),i_pid_ph(:,2));
 plot(d_pid_ph(:,1),d_pid_ph(:,2));
+axis square;
+grid on;
+grid minor;
 title('System Phase Response Comparisons');
 xlabel('Frequency / Hz');
 ylabel('Phase / Degrees');
 legend({'Freestanding','Mounted','Linkwitz-Transformed','Voltage-controlled','Current-controlled','Displacement-controlled'},'Location','northeast');
+exportgraphics(phase_plot,'phase_plot.png','Resolution',600');
