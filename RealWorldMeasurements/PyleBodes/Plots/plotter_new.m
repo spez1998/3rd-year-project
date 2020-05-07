@@ -16,17 +16,17 @@ set(0,'defaultLegendFontName','Times New Roman');
 set(0,'defaultAxesGridLineStyle','-');
 set(0,'defaultAxesFontSize',14);
 
-s3_mag = figure;
+s3_imp = figure;
 semilogx(s3_ca(:,1),s3_ca(:,2),'r');
 hold on;
 semilogx(s3_cb(:,1),s3_cb(:,2),'b');
 grid on;
 axis square;
-title('PLPW6D Coil Magnitude Comparison');
+title('PLPW6D Coil Impedance Comparison');
 xlabel('Frequency / Hz');
 ylabel('Impedance / \Omega');
 legend('Coil A','Coil B');
-exportgraphics(s3_mag,'s3_mag_comps.png','Resolution',400');
+exportgraphics(s3_imp,'s3_imp_comps.png','Resolution',600');
 
 s3_phase = figure;
 semilogx(s3_ca(:,1),s3_ca(:,3),'r');
@@ -38,7 +38,7 @@ title('PLPW6D Coil Phase Comparison');
 xlabel('Frequency / Hz');
 ylabel('Phase / degrees');
 legend('Coil A','Coil B');
-exportgraphics(s3_phase,'s3_phase_comps.png','Resolution',400');
+exportgraphics(s3_phase,'s3_phase_comps.png','Resolution',600');
 
 s3_parallel = figure;
 semilogx(s3_p(:,1),s3_p(:,2),'r');
@@ -47,4 +47,4 @@ axis square;
 title('PLPW6D Coil Linkage');
 xlabel('Frequency / Hz');
 ylabel('Impedance / \Omega');
-exportgraphics(s3_parallel,'s3_coil_link.png','Resolution',400');
+exportgraphics(s3_parallel,'s3_coil_link.png','Resolution',600');
